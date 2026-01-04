@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:text="Connect to HC-05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:text="Status: Not connected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingTop="8dp">
+        <TextView
+            android:id="@+id/tvResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="#EEE"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+    <Button android:id="@+id/btnAlarmOn" android:text="Alarm ON" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnAlarmOff" android:text="Alarm OFF" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnBacklightOn" android:text="Backlight ON" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnBacklightOff" android:text="Backlight OFF" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnServoOpen" android:text="Servo OPEN" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btnServoClose" android:text="Servo CLOSE" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+</LinearLayout>
